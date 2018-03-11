@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #ffffff url('img/gaming-pattern.png');
+      /*Background pattern from Subtle Patterns*/
+    font-family: 'Coda', cursive;
+    margin-top: 5px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    margin-left: 300px;
+    width: 660px;
+    height: 889px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-transform: full-width;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: #a9a9a9;
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #eef204;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+    color: blue;
+}
+
+.score-panel .stars li {
+    margin: 0 0 0 20px;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    cursor: pointer;
+    margin :0 0 0 80px;
+    display: inline-block;
+}
+.score-panel .timer {
+    margin: 0 0 0 50px;
+    display: inline-block;
+}
+.timer {
+    margin: 0 0 0 50px;
+    display: inline-block;
+}
+.moves{
+    margin: 0 0 0 50px;
+    display: inline-block;
+}
+.earned{
+    margin: 0 0 0 50px;
+    display: inline-block;
+}
+.stars .fas .fa-star{
+    margin: 0 0 0 50px;
+    display: inline-block;
+}
+.restart .fas .fa-redo{
+    margin: 0 0 0 50px;
+    display: inline-block;
+}
+
+svg {
+    pointer-events: none;
+}
